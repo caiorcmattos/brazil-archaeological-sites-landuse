@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below and the data package."
+title: "Code for: Cultural Heritage at Risk: Quantifying the threats of land use change to Brazil's Archaeological Sites"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/caiorcmattos/brazil-archaeological-sites-landuse"
+authors:
+  - given-names: Caio
+    family-names: Mattos
+    email: caio.mattos@relva.org
+  - given-names: Marina
+    family-names: Hirota
+  - given-names: Gabriela
+    family-names: Prestes Carneiro
+  - given-names: Morgan J.
+    family-names: Schmidt
+  - given-names: Thiago Berlanga
+    family-names: Trindade
+  - given-names: Eduardo G.
+    family-names: Neves
+  - given-names: Carlos Augusto
+    family-names: da Silva
+  - given-names: Agustin
+    family-names: Fuentes
+  - given-names: Miqueias
+    family-names: Mugge
+  - given-names: Rodrigo
+    family-names: Simon de Moraes
+  - given-names: Marcos R.
+    family-names: Rosa
+  - given-names: Julia
+    family-names: Shimbo
+  - given-names: João
+    family-names: Biehl
+preferred-citation:
+  type: article
+  journal: "Frontiers in Conservation Science"
+  title: "Cultural Heritage at Risk: Quantifying the threats of land use change to Brazil's Archaeological Sites"
+  authors:
+    - given-names: Caio
+      family-names: Mattos
+    - given-names: Marina
+      family-names: Hirota
+    - given-names: Gabriela
+      family-names: Prestes Carneiro
+    - given-names: Morgan J.
+      family-names: Schmidt
+    - given-names: Thiago Berlanga
+      family-names: Trindade
+    - given-names: Eduardo G.
+      family-names: Neves
+    - given-names: Carlos Augusto
+      family-names: da Silva
+    - given-names: Agustin
+      family-names: Fuentes
+    - given-names: Miqueias
+      family-names: Mugge
+    - given-names: Rodrigo
+      family-names: Simon de Moraes
+    - given-names: Marcos R.
+      family-names: Rosa
+    - given-names: Julia
+      family-names: Shimbo
+    - given-names: João
+      family-names: Biehl

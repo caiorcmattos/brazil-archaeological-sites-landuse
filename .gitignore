@@ -1,0 +1,12 @@
+# OS / Python
+.DS_Store
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Data and outputs (see data/README.md)
+data/*
+!data/README.md
+outputs/
+logs/

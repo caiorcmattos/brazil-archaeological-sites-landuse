@@ -1,0 +1,44 @@
+# Parameters for filtering the IPHAN database (continental Brazil).
+# Read by scripts/03_filter_sites.py via sitios_arq.filtering.load_config.
+#
+# Each parameter: description + value.
+
+[coast_tolerance_m]
+description = "Site at sea within this distance of the coast: no flag"
+value = 250
+
+[offshore_hard_m]
+description = "Site at sea beyond this distance: offshore_far (hard); between coast_tolerance_m and this value: offshore_near (soft)"
+value = 1000
+
+[border_tolerance_m]
+description = "Site in another country within this distance of the border: near_border (soft); beyond: outside_brazil (hard)"
+value = 100
+
+[island_types_flagged]
+description = "island_type values (hid_ilha_a) that raise maritime_island; 'untyped' = empty tipoilha, included as a precaution"
+value = ["maritime", "untyped"]
+
+[max_island_area_km2]
+description = "maritime_island is only raised for islands with geodesic area < this value (100 km² = 100,000,000 m²); sites on larger islands are kept"
+value = 100
+
+[shipwreck_terms]
+description = "Strong terms (sintese_be + identifica, accent-free lowercase text; trailing '*' = prefix). Raise shipwreck_text (hard). Must not include submers* or inundado. Terms stay in Portuguese: they match Portuguese text."
+value = [
+  "naufrag*", "torpede*", "submarino", "afund*", "socobr*", "encalh*",
+  "alto-mar", "ao largo", "bombas de profundidade",
+  "cargueiro", "corveta", "fragata", "rebocador",
+]
+
+[ambiguous_terms]
+description = "Ambiguous terms: review metric only, raise no flag"
+value = ["navio", "embarcac*", "ancora*", "canhao", "destroco*", "galeao", "vapor"]
+
+[hard_order]
+description = "primary_reason precedence among hard flags (outside_mapbiomas last)"
+value = ["invalid_coord", "swapped_coord", "outside_brazil", "offshore_far", "shipwreck_text", "outside_mapbiomas"]
+
+[soft_order]
+description = "primary_reason precedence among soft flags (after hard ones)"
+value = ["maritime_island", "offshore_near", "near_border"]

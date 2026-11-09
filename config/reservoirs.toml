@@ -1,0 +1,37 @@
+# Parameters for the reservoir analysis (Fig 4).
+# Read by scripts/13_reservoir_water.py and 14_summary_tables.py via
+# sitios_arq.reservoirs.load_config.
+#
+# Each parameter: description + value.
+
+[water_body_type]
+description = "ANA massa_dagua: keep features whose `detipomass` equals this value (all artificial water bodies, any use)"
+value = "Artificial"
+
+[association]
+description = "A site is reservoir-associated when its buffer intersects at least one kept water body"
+value = "intersects"
+
+[radius_m]
+description = "Buffer radius used for association and water share"
+value = 100
+
+[years]
+description = "Years compared: start and end of the main series"
+value = [1985, 2025]
+
+[entirely_water]
+description = "A buffer is entirely classified as water in a year when its water share is exactly 1 (no area of any other class)"
+value = "exact"
+
+[sensitivity_min_share]
+description = "Sensitivity of the entirely-water rule: minimum water share (0-1) counted as entirely water, applied to the start and end years. A 100 m buffer holds about 36 pixel-equivalents (35 to 42, by latitude), so 0.97 is about one pixel of another class and 0.90 about four"
+value = [0.99, 0.97, 0.95, 0.90]
+
+[hydro_use]
+description = "ANA `usoprinc` value that marks a hydropower reservoir"
+value = "Hidrelétrica"
+
+[top_hydro]
+description = "Hydropower reservoirs shown in Fig 4 B: the N with most buffers entirely classified as water in the end year (before + after the start year)"
+value = 5

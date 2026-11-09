@@ -1,0 +1,35 @@
+code,name_pt,name_en,category
+0,Sem dado,No data,No data
+3,Formação Florestal,Forest Formation,Natural
+4,Formação Savânica,Savanna Formation,Natural
+5,Mangue,Mangrove,Natural
+6,Floresta Alagável,Floodable Forest,Natural
+7,Savana Alagada (beta),Flooded Savanna (beta),Natural
+11,Campo Alagado e Área Pantanosa,Wetland,Natural
+12,Formação Campestre,Grassland Formation,Natural
+23,"Praia, Duna e Areal","Beach, Dune and Sand Spot",Natural
+29,Afloramento Rochoso,Rocky Outcrop,Natural
+32,Apicum,Hypersaline Tidal Flat,Natural
+49,Restinga Arbórea,Wooded Sandbank Vegetation,Natural
+50,Restinga Herbácea ou Arbustiva,Herbaceous Sandbank Vegetation,Natural
+77,Formação Herbáceo Arbustiva,Herbaceous and Shrub Formation,Natural
+84,Marisma (beta),Salt Marsh (beta),Natural
+9,Silvicultura,Forest Plantation,Anthropic
+15,Pastagem,Pasture,Anthropic
+20,Cana,Sugar cane,Anthropic
+21,Mosaico de Usos,Mosaic of Uses,Anthropic
+24,Área Urbanizada,Urban Area,Anthropic
+25,Outras Áreas não Vegetadas,Other non Vegetated Areas,Anthropic
+30,Mineração,Mining,Anthropic
+31,Aquicultura,Aquaculture,Anthropic
+35,Dendê,Palm Oil,Anthropic
+39,Soja,Soybean,Anthropic
+40,Arroz,Rice,Anthropic
+41,Outras Lavouras Temporárias,Other Temporary Crops,Anthropic
+46,Café,Coffee,Anthropic
+47,Citrus,Citrus,Anthropic
+48,Outras Lavouras Perenes,Other Perennial Crops,Anthropic
+62,Algodão (beta),Cotton (beta),Anthropic
+75,Usina Fotovoltaica,Photovoltaic Power Plant,Anthropic
+91,Parque eólico (beta),Wind farm (beta),Anthropic
+33,"Rio, Lago e Oceano","River, Lake and Ocean",Water

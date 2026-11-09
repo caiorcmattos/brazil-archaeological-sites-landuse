@@ -1,0 +1,29 @@
+# Parameters for buffers and MapBiomas C11 extraction.
+# Read by scripts/04_buffers.py, 06_extract_mapbiomas.py and 07_merge_extraction.py
+# via sitios_arq.extraction.load_config.
+#
+# Each parameter: description + value.
+
+[radii_m]
+description = "Buffer radii (geodesic metres). 100 m = main time series; 200, 500, 1000 m = sensitivity"
+value = [100, 200, 500, 1000]
+
+[main_radius_m]
+description = "Radius of the main time series (every year in series_years)"
+value = 100
+
+[series_years]
+description = "First and last year (inclusive) of the main time series"
+value = [1985, 2025]
+
+[sensitivity_years]
+description = "Years extracted for the sensitivity radii: series endpoints and breaks between Brazilian public-policy periods"
+value = [1985, 2004, 2019, 2025]
+
+[n_sites]
+description = "Expected number of sites in the analytical set (kept by scripts/03_filter_sites.py); checked by 04_buffers.py and 10_hex_grid.py"
+value = 32285
+
+[n_vertices]
+description = "Vertices of each geodesic buffer polygon (vertices exactly on the geodesic circle; max sagitta r*(1-cos(pi/n)))"
+value = 256

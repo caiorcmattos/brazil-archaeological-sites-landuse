@@ -1,0 +1,41 @@
+# Parameters of the hexagonal grid of anthropic change (Fig 2 B–E).
+# Read by scripts/10_hex_grid.py and the hex change analysis.
+#
+# Each parameter: description + value.
+#
+# Method: the national dissolve of the radius below is clipped by the grid,
+# so every square metre of buffer belongs to exactly one hexagon and the hexagons
+# add up to NATIONAL (no double counting of overlapping buffers). Sites are counted
+# per hexagon by their point, only for the min_sites rule.
+
+[radius_m]
+description = "Buffer radius whose national dissolve is clipped by the grid (main time series)"
+value = 100
+
+[grid_crs]
+description = "CRS in which the hexagons are regular (SIRGAS 2000 / Brazil Polyconic; not equal-area, cell areas vary with the projection scale)"
+value = "EPSG:5880"
+
+[hex_width_km]
+description = "Hexagon size: distance between opposite vertices (2 x circumradius); flat-to-flat = width * sqrt(3)/2, nominal area = 3*sqrt(3)/8 * width^2 (~6,495 km2 for 100 km)"
+value = 100
+
+[orientation]
+description = "Hexagon orientation: 'flat-top' = vertices at 0, 60, ..., 300 degrees, columns offset by half a cell"
+value = "flat-top"
+
+[origin_xy_m]
+description = "Fixed grid origin in grid_crs (m): centre of the hexagon at column 0, row 0. Does not depend on the data, so cells and hex_id are stable across runs; west and south of the Brazil bounds (land_5880: x >= 2,795,024, y >= 6,263,773)"
+value = [2700000, 6200000]
+
+[edge_densify_m]
+description = "Maximum spacing (m, in grid_crs) of the vertices added along hexagon edges before reprojecting to EPSG:4674, where the dissolve is clipped"
+value = 1000
+
+[min_sites]
+description = "Minimum number of site points in a hexagon for its value to be shown; cells with fewer sites (n < min_sites) are drawn as sparse support"
+value = 3
+
+[periods]
+description = "Periods [start, end] of change in anthropic cover; endpoints from sensitivity_years in config/extraction.toml (full series and breaks between public-policy periods)"
+value = [[1985, 2025], [1985, 2004], [2004, 2019], [2019, 2025]]

@@ -1,0 +1,21 @@
+[project]
+name = "sitios-arq"
+version = "1.0.0"
+description = "Cultural Heritage at Risk: Quantifying the threats of land use change to Brazil's Archaeological Sites"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Caio Mattos", email = "caio.mattos@relva.org" }]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

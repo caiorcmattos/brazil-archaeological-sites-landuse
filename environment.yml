@@ -1,0 +1,27 @@
+# Environment used to produce the results of the paper (macOS arm64 and Linux x86-64).
+#   micromamba create -f environment.yml    (or: conda env create -f environment.yml)
+#   micromamba activate sitios-arq
+#   pip install -e .
+name: sitios-arq
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12.12
+  - gdal=3.10.3
+  - proj=9.6.2
+  - geos=3.13.1
+  - exactextract=0.2.2
+  - geopandas=0.14.4
+  - shapely=2.0.7
+  - pyproj=3.7.2
+  - rasterio=1.4.3
+  - fiona=1.10.1
+  - rtree=1.2.0
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - pyarrow=21.0.0
+  - matplotlib=3.8.4
+  - pillow=12.3.0
+  - pytest=9.1.1
+  - pip
